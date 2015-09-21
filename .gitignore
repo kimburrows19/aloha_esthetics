@@ -1,0 +1,20 @@
+# Magento related #
+/index.php
+/var/**
+/media/**
+/includes/src/**
+/app/etc/local.xml
+/app/etc/local.xml.local
+/robots.txt
+/.htaccess
+.htpasswd*
+sitemap.xml
+
+# Compiled Source and Excecutable #
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.swp
