@@ -72,9 +72,9 @@ p.product-name {
 
 .products-grid .product-name,
 .products-list .product-name {
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-bottom: 5px;
-    font-size: $f-size;
+    font-size: $f-size-xs;
     font-family: $f-stack-special;
 
     a {
@@ -112,7 +112,7 @@ $product-column-spacing: 20px;
 }
 
 .products-grid .product-image img {
-    width: 100%;
+    //width: 100%;
     height: auto;
 
     &:hidden {
@@ -124,7 +124,7 @@ $product-column-spacing: 20px;
     .products-grid .product-image {
         width: 75%;
         margin-bottom: 15px;
-        margin-left: 10%;
+        //margin-left: 10%;
     }
 }
 
@@ -132,11 +132,14 @@ $product-column-spacing: 20px;
 $productsGridActionHeight: 85px;
 
 .products-grid .product-info {
+    min-height: 0 !important;
     position: relative;
-    padding-bottom: $productsGridActionHeight + 10px;
+    //padding-bottom: $productsGridActionHeight + 10px;
+    padding-bottom: 10px !important;
 }
 
 .products-grid .actions {
+    display:none;
     padding-top: $box-spacing;
     position: absolute;
     bottom: 0px;

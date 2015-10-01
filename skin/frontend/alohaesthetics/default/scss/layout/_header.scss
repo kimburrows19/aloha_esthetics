@@ -54,6 +54,7 @@
     padding: $gap;
     background-color: $c-action;
     text-transform: uppercase;
+    border-bottom: 3px solid $c-pink;
 
     .header-language-container {
         max-width: $max-content-width;

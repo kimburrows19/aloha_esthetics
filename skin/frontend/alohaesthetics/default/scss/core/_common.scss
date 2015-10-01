@@ -727,7 +727,7 @@ a.button:hover {
 .main-container,
 .footer-container {
     position: relative;
-    max-width: $max-container-width;
+    //max-width: $max-container-width;
     margin: 0 auto;
     padding: $trim-small;
 
@@ -745,6 +745,8 @@ a.button:hover {
 }
 
 .footer-container {
+    background-color: $c-black;
+    border-top: 3px solid $c-pink;
     padding-top: 0px;
 }
 
@@ -1426,7 +1428,6 @@ span.weee {
 .no-touch .product-img-box .product-image:not(.zoom-available):hover {
     position: relative;
     display: block;
-    border: 1px solid $c-module-border-light;
 }
 
 @include bp (max-width, $bp-medium) {
