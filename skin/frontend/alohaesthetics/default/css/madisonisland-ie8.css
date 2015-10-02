@@ -168,7 +168,7 @@ body .promos > li {
 .cms-index-index .products-grid .actions,
 .cms-index-noroute .products-grid .ratings,
 .cms-index-noroute .products-grid .actions {
-  display: none;
+  display: none !important;
 }
 
 .cms-index-index h2.subtitle {
