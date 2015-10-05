@@ -43,7 +43,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  color: #333333;
+  color: #252222;
   background-color: #EBEBEB;
 }
 
@@ -696,7 +696,7 @@ p.sku {
 }
 
 .price-box .price {
-  color: #000000;
+  color: #33B0C2;
   font-size: 16px;
 }
 
@@ -713,7 +713,7 @@ p.sku {
 
 .price-box .minimal-price-link {
   padding-left: 1em;
-  color: #000000;
+  color: #33B0C2;
   display: block;
   /* We want this to show on its own line, otherwise the layout looks funky */
 }
@@ -743,7 +743,7 @@ p.sku {
 }
 
 .price-box .special-price {
-  color: #000000;
+  color: #33B0C2;
   padding-left: 1em;
 }
 .price-box .special-price .price-label {
