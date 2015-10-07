@@ -2960,6 +2960,7 @@ a.skip-link {
 .nav-primary li.level0,
 .nav-primary a.level0 {
   display: inline-block;
+  background-color: #ffffff;
 }
 .nav-primary li:last-child > a {
   border-bottom: none;
