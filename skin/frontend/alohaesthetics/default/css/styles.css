@@ -3473,7 +3473,6 @@ a.skip-link {
 @media only screen and (min-width: 771px) {
   .nav-primary {
     display: block;
-    margin-top: 15px;
   }
 }
 /* ============================================ *
@@ -3501,6 +3500,8 @@ a.skip-link {
 
 .nav-primary li.level0 > a {
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: medium;
 }
 
 /* ============================================ *
@@ -3662,8 +3663,8 @@ a.skip-link {
   #header-search {
     display: block;
     position: absolute;
-    top: 55px;
-    right: 0;
+    top: 8px;
+    right: 230px;
     width: 25%;
     height: 50px;
     padding: 0;

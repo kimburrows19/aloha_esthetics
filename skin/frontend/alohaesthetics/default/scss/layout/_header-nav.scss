@@ -98,7 +98,6 @@
 @include bp(min-width, $bp-medium + 1) {
     .nav-primary {
         display: block;
-        margin-top: 15px;
     }
 
 }
@@ -136,6 +135,8 @@ $nav-primary-height: 30px;
 
 .nav-primary li.level0 > a {
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: medium;
 }
 
 /* ============================================ *

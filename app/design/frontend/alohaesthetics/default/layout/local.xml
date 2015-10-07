@@ -1,6 +1,16 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
 <cms_index_index>
+	<reference name="head">
+		<action method="addItem">
+            <type>skin_js</type>
+            <script>js/jquery.flexslider-min.js</script>
+        </action>
+        <action method="addItem">
+            <type>skin_css</type>
+            <name>css/jquery/flexslider.css</name>
+        </action>
+	</reference>
 	<reference name="content">
 		<block type="core/template" name="ae_home" as="ae_home" template="alohaesthetics/home/homepage.phtml"/>
 	</reference>
