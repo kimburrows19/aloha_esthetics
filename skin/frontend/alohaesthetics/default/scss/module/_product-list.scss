@@ -112,7 +112,7 @@ $product-column-spacing: 20px;
 }
 
 .products-grid .product-image img {
-    //width: 100%;
+    width: inherit;
     height: auto;
 
     &:hidden {
@@ -122,9 +122,10 @@ $product-column-spacing: 20px;
 
 .widget-new-products {
     .products-grid .product-image {
-        width: 75%;
         margin-bottom: 15px;
-        //margin-left: 10%;
+        img {
+            width: inherit;
+        }
     }
 }
 

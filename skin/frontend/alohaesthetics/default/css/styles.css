@@ -4277,6 +4277,7 @@ p.product-name a:hover {
 }
 
 .products-grid .product-image img {
+  width: inherit;
   height: auto;
 }
 .products-grid .product-image img:hidden {
@@ -4284,8 +4285,10 @@ p.product-name a:hover {
 }
 
 .widget-new-products .products-grid .product-image {
-  width: 75%;
   margin-bottom: 15px;
+}
+.widget-new-products .products-grid .product-image img {
+  width: inherit;
 }
 
 .products-grid .product-info {
