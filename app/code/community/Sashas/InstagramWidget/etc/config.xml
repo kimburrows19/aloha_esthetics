@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category    Sashas
+* @package     Sashas_InstagramWidget
+* @author      Sashas IT Support <support@sashas.org>
+* @copyright   2007-2016 Sashas IT Support Inc. (http://www.sashas.org)
+* @license     http://opensource.org/licenses/GPL-3.0  GNU General Public License, version 3 (GPL-3.0)
+* @link        http://www.extensions.sashas.org/instagram-widget.html
+*/
+-->
+<config>
+	<modules>
+		<Sashas_InstagramWidget>
+			<version>1.2.7</version>
+		</Sashas_InstagramWidget>
+	</modules>
+	<global>
+		<blocks>
+			<instagramwidget>
+				<class>Sashas_InstagramWidget_Block</class>
+			</instagramwidget>
+		</blocks>
+		<helpers>
+			<instagramwidget>
+				<class>Sashas_InstagramWidget_Helper</class>
+			</instagramwidget>
+		</helpers>
+		<models>
+			<instagramwidget>
+				<class>Sashas_InstagramWidget_Model</class>
+			</instagramwidget>
+		</models>
+		<resources>
+			<instagramwidget_setup>
+				<setup>
+					<module>Sashas_InstagramWidget</module>
+					<class>Mage_Catalog_Model_Resource_Setup</class>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</instagramwidget_setup>
+			<instagramwidget_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</instagramwidget_write>
+			<instagramwidget_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</instagramwidget_read>
+		</resources>
+		<cache>
+			<types>
+				<sashas_instagtramwidget>
+					<label>Instagram Widget</label>
+					<description>Cache of question to instagram.</description>
+					<tags>instagramwidget</tags>
+				</sashas_instagtramwidget>
+			</types>
+		</cache>
+	</global>
+	<frontend>
+		<layout>
+			<updates>
+				<instagramwidget>
+					<file>instagramwidget.xml</file>
+				</instagramwidget>
+			</updates>
+		</layout>
+	</frontend>
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<Sashas_InstagramWidget before="Mage_Adminhtml">Sashas_InstagramWidget_Adminhtml</Sashas_InstagramWidget>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+	<default>
+		<instagramwidget>
+			<instagramwidget_group>
+				<show_full_popup>
+					<![CDATA[1]]>
+				</show_full_popup>
+				<include_jquery>
+					<![CDATA[1]]>
+				</include_jquery>
+				<include_fancybox>
+					<![CDATA[1]]>
+				</include_fancybox>
+				<show_caption>0</show_caption>
+			</instagramwidget_group>
+			<instagramwidget_category>
+				<posts_count>
+					<![CDATA[3]]>
+				</posts_count>
+				<image_resolution>
+					<![CDATA[thumbnail]]>
+				</image_resolution>
+				<block_title>
+					<![CDATA[Instagram Feed]]>
+				</block_title>
+			</instagramwidget_category>
+			<instagramwidget_nonanchor_category>
+				<posts_count>
+					<![CDATA[3]]>
+				</posts_count>
+				<image_resolution>
+					<![CDATA[thumbnail]]>
+				</image_resolution>
+				<block_title>
+					<![CDATA[Instagram Feed]]>
+				</block_title>
+			</instagramwidget_nonanchor_category>
+			<instagramwidget_cms_index>
+				<posts_count>
+					<![CDATA[3]]>
+				</posts_count>
+				<image_resolution>
+					<![CDATA[thumbnail]]>
+				</image_resolution>
+				<block_title>
+					<![CDATA[Instagram Feed]]>
+				</block_title>
+			</instagramwidget_cms_index>
+			<instagramwidget_cms_pages>
+				<posts_count>
+					<![CDATA[3]]>
+				</posts_count>
+				<image_resolution>
+					<![CDATA[thumbnail]]>
+				</image_resolution>
+				<block_title>
+					<![CDATA[Instagram Feed]]>
+				</block_title>
+			</instagramwidget_cms_pages>
+			<instagramwidget_product_page>
+				<posts_count>
+					<![CDATA[3]]>
+				</posts_count>
+				<image_resolution>
+					<![CDATA[thumbnail]]>
+				</image_resolution>
+				<block_title>
+					<![CDATA[Instagram Feed]]>
+				</block_title>
+			</instagramwidget_product_page>
+			<instagramwidget_cache>
+				<cache_lifetime>
+					<![CDATA[3600]]>
+				</cache_lifetime>
+			</instagramwidget_cache>
+		</instagramwidget>
+	</default>
+</config>

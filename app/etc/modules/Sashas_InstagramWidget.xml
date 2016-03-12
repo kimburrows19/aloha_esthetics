@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Sashas_InstagramWidget>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Sashas_InstagramWidget>
+    </modules>
+</config>

@@ -1,0 +1,608 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category    Sashas
+* @package     Sashas_InstagramWidget
+* @author      Sashas IT Support <support@sashas.org>
+* @copyright   2007-2016 Sashas IT Support Inc. (http://www.sashas.org)
+* @license     http://opensource.org/licenses/GPL-3.0  GNU General Public License, version 3 (GPL-3.0)
+* @link        http://www.extensions.sashas.org/instagram-widget.html
+*/
+-->
+<config>
+	<tabs>
+		<sashas_modules translate="label" module="instagramwidget">
+			<label>Sashas Extensions</label>
+			<sort_order>10</sort_order>
+		</sashas_modules>
+	</tabs>
+	<sections>
+		<instagramwidget translate="label" module="instagramwidget">
+			<label>Instagram Widget</label>
+			<tab>sashas_modules</tab>
+			<sort_order>13000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<instagramwidget_group translate="label" module="instagramwidget">
+					<label>Instagram Widget Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1000</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<comment>
+						<![CDATA[<p class="switcher">You can view your client settings at <a href="http://instagram.com/developer/clients/manage/" target="_blank" >Instagram Manage Clients</a></p>]]>
+					</comment>
+					<fields>
+						<return_url translate="label">
+							<label>Instagram Redirect Url:</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<frontend_model>instagramwidget/adminhtml_system_config_settings</frontend_model>
+						</return_url>
+						<auth_status translate="label">
+							<label>Authorization Status:</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>15</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<frontend_model>instagramwidget/adminhtml_system_config_status</frontend_model>
+							<comment>
+								<![CDATA[Instagram authorization status]]>
+							</comment>
+						</auth_status>
+						<client_id translate="label">
+							<label>Client ID:</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Please add  and save client id before getting access token]]>
+							</comment>
+						</client_id>
+						<client_secret translate="label">
+							<label>Client Secret:</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Please add  and save client secret before getting access token]]>
+							</comment>
+						</client_secret>
+						<access_token translate="label">
+							<label>Access Token:</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>32</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<model>instagramwidget/system_config_accessToken</model>
+							</comment>
+							<tooltip>Don't have a Access Token? Simply click below to get it.</tooltip>
+						</access_token>
+						<show_full_popup translate="label">
+							<label>Show Popup onclick:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[This option will show full image when image will be clicked]]>
+							</comment>
+						</show_full_popup>
+						<include_jquery translate="label">
+							<label>Include jQuery:</label>
+							<frontend_type>select</frontend_type>
+							<depends>
+								<show_full_popup>1</show_full_popup>
+							</depends>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Disable only if your site already have jQuery included]]>
+							</comment>
+						</include_jquery>
+						<include_fancybox translate="label">
+							<label>Include Fancybox:</label>
+							<frontend_type>select</frontend_type>
+							<depends>
+								<show_full_popup>1</show_full_popup>
+							</depends>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Disable only if your site already have Fancybox included]]>
+							</comment>
+						</include_fancybox>
+						<show_caption>
+							<label>Show Image Caption:</label>
+							<frontend_type>select</frontend_type>
+							<depends>
+								<show_full_popup>1</show_full_popup>
+							</depends>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>80</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Show/Hide Image Caption in popup window]]>
+							</comment>
+						</show_caption>
+						<open_instagram>
+							<label>Open Instagram Post:</label>
+							<frontend_type>select</frontend_type>
+							<depends>
+								<show_full_popup>0</show_full_popup>
+							</depends>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>90</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Open instagream post in new window on click event.]]>
+							</comment>
+						</open_instagram>
+					</fields>
+				</instagramwidget_group>
+				<instagramwidget_category translate="label" module="instagramwidget">
+					<label>Anchor Category Page Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>2000</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<extension_enabled translate="label">
+							<label>View Widget:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</extension_enabled>
+						<block_title translate="label">
+							<label>Widget Block Title:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Block title for instagram images]]>
+							</comment>
+							<sort_order>15</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</block_title>
+						<layered_position translate="label">
+							<label>Widget Position:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_position</source_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</layered_position>
+						<search_by translate="label">
+							<label>Show Posts From:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_searchBy</source_model>
+							<comment>
+								<![CDATA[Select tag or username where posts will be taken]]>
+							</comment>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</search_by>
+						<search_by_value translate="label">
+							<label>Find Posts By:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Enter tag or instagram username where posts will be taken.]]>
+							</comment>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</search_by_value>
+						<image_resolution translate="label">
+							<label>Image Resolution:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_imageResolution</source_model>
+							<comment>
+								<![CDATA[Select instagram image resolution]]>
+							</comment>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</image_resolution>
+						<posts_count translate="label">
+							<label>Post Count:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Amount of posts should be shown]]>
+							</comment>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</posts_count>
+					</fields>
+				</instagramwidget_category>
+				<instagramwidget_nonanchor_category translate="label" module="instagramwidget">
+					<label>Non Anchor Category Page Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>3000</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<extension_enabled translate="label">
+							<label>View Widget:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</extension_enabled>
+						<block_title translate="label">
+							<label>Widget Block Title:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Block title for instagram images]]>
+							</comment>
+							<sort_order>15</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</block_title>
+						<layered_position translate="label">
+							<label>Widget Position:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_position</source_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</layered_position>
+						<search_by translate="label">
+							<label>Show Posts From:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_searchBy</source_model>
+							<comment>
+								<![CDATA[Select tag or username where posts will be taken]]>
+							</comment>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</search_by>
+						<search_by_value translate="label">
+							<label>Find Posts By:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Enter tag or instagram username where posts will be taken.]]>
+							</comment>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</search_by_value>
+						<image_resolution translate="label">
+							<label>Image Resolution:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_imageResolution</source_model>
+							<comment>
+								<![CDATA[Select instagram image resolution]]>
+							</comment>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</image_resolution>
+						<posts_count translate="label">
+							<label>Post Count:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Amount of posts should be shown]]>
+							</comment>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</posts_count>
+					</fields>
+				</instagramwidget_nonanchor_category>
+				<instagramwidget_cms_index translate="label" module="instagramwidget">
+					<label>Homepage Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>4000</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<extension_enabled translate="label">
+							<label>View Widget:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</extension_enabled>
+						<block_title translate="label">
+							<label>Widget Block Title:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Block title for instagram images]]>
+							</comment>
+							<sort_order>15</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</block_title>
+						<layered_position translate="label">
+							<label>Widget Position:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_position</source_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</layered_position>
+						<search_by translate="label">
+							<label>Show Posts From:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_searchBy</source_model>
+							<comment>
+								<![CDATA[Select tag or username where posts will be taken]]>
+							</comment>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</search_by>
+						<search_by_value translate="label">
+							<label>Find Posts By:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Enter tag or instagram username where posts will be taken.]]>
+							</comment>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</search_by_value>
+						<image_resolution translate="label">
+							<label>Image Resolution:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_imageResolution</source_model>
+							<comment>
+								<![CDATA[Select instagram image resolution]]>
+							</comment>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</image_resolution>
+						<posts_count translate="label">
+							<label>Post Count:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Amount of posts should be shown]]>
+							</comment>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</posts_count>
+					</fields>
+				</instagramwidget_cms_index>
+				<instagramwidget_cms_pages translate="label" module="instagramwidget">
+					<label>CMS Pages Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>5000</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<extension_enabled translate="label">
+							<label>View Widget:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</extension_enabled>
+						<block_title translate="label">
+							<label>Widget Block Title:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Block title for instagram images]]>
+							</comment>
+							<sort_order>15</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</block_title>
+						<layered_position translate="label">
+							<label>Widget Position:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_position</source_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</layered_position>
+						<search_by translate="label">
+							<label>Show Posts From:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_searchBy</source_model>
+							<comment>
+								<![CDATA[Select tag or username where posts will be taken]]>
+							</comment>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</search_by>
+						<search_by_value translate="label">
+							<label>Find Posts By:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Enter tag or instagram username where posts will be taken.]]>
+							</comment>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</search_by_value>
+						<image_resolution translate="label">
+							<label>Image Resolution:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_imageResolution</source_model>
+							<comment>
+								<![CDATA[Select instagram image resolution]]>
+							</comment>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</image_resolution>
+						<posts_count translate="label">
+							<label>Post Count:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Amount of posts should be shown]]>
+							</comment>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</posts_count>
+					</fields>
+				</instagramwidget_cms_pages>
+				<instagramwidget_product_page translate="label" module="instagramwidget">
+					<label>Product Page Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>6000</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<extension_enabled translate="label">
+							<label>View Widget:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</extension_enabled>
+						<block_title translate="label">
+							<label>Widget Block Title:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Block title for instagram images]]>
+							</comment>
+							<sort_order>15</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</block_title>
+						<search_by translate="label">
+							<label>Show Posts From:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_searchBy</source_model>
+							<comment>
+								<![CDATA[Select tag or username where posts will be taken. (It may be overwritten in product General options)]]>
+							</comment>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</search_by>
+						<search_by_value translate="label">
+							<label>Find Posts By:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Enter tag or instagram username where posts will be taken. (It may be overwritten in product General options)]]>
+							</comment>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</search_by_value>
+						<image_resolution translate="label">
+							<label>Image Resolution:</label>
+							<frontend_type>select</frontend_type>
+							<source_model>instagramwidget/source_imageResolution</source_model>
+							<comment>
+								<![CDATA[Select instagram image resolution]]>
+							</comment>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</image_resolution>
+						<posts_count translate="label">
+							<label>Post Count:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Amount of posts should be shown]]>
+							</comment>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</posts_count>
+					</fields>
+				</instagramwidget_product_page>
+				<instagramwidget_cache translate="label" module="instagramwidget">
+					<label>Cache Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>7000</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<cache_lifetime translate="label">
+							<label>Cache Lifetime:</label>
+							<frontend_type>text</frontend_type>
+							<comment>
+								<![CDATA[Lifetime of cache in seconds. (Cache should be enabled in System->Cache Management)]]>
+							</comment>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cache_lifetime>
+					</fields>
+				</instagramwidget_cache>
+			</groups>
+		</instagramwidget>
+	</sections>
+</config>
