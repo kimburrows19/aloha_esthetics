@@ -81,9 +81,7 @@
         }
 
         .price-info {
-            float: left;
-            padding-left: $trim/2;
-            text-align: right;
+            text-align: left;
         }
 
         .extra-info,
@@ -118,7 +116,7 @@
             .regular-price .price,
             .special-price .price,
             .full-product-price .price {
-                color: $c-action;
+                color: $c-pink;
                 font-size: 24px;
             }
 
