@@ -61,11 +61,11 @@ foreach ($children as $child) {
 
     if (!empty($_hasChildren)) {
         $html .= '<ul class="level'. $childLevel .'">';
-        $html .=     '<li class="level'. $nextChildLevel .' view-all">';
-        $html .=         '<a class="level'. $nextChildLevel .'" href="'. $child->getUrl() .'">';
-        $html .=             $this->__('View All') . ' ' . $this->escapeHtml($this->__($child->getName()));
-        $html .=         '</a>';
-        $html .=     '</li>';
+        // $html .=     '<li class="level'. $nextChildLevel .' view-all">';
+        // $html .=         '<a class="level'. $nextChildLevel .'" href="'. $child->getUrl() .'">';
+        // $html .=             $this->__('View All') . ' ' . $this->escapeHtml($this->__($child->getName()));
+        // $html .=         '</a>';
+        // $html .=     '</li>';
         $html .=     $this->render($child, $childrenWrapClass);
         $html .= '</ul>';
     }
