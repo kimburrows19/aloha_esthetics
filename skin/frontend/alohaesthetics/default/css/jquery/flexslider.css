@@ -206,3 +206,10 @@ html[xmlns] .slides {
   background-position: 0 -26px;
   cursor: default;
 }
+
+@media only screen and (max-width: 770px) {
+  /* line 63, ../../scss/jquery/flexslider.scss */
+  .flex-container {
+    display: none;
+  }
+}

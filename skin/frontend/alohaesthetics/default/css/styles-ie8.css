@@ -4835,7 +4835,7 @@ p.product-name a:hover {
 }
 /* line 83, ../scss/module/_catalog-product.scss */
 .product-view .product-shop .price-info {
-  float: right;
+  float: left;
   padding-left: 5px;
   text-align: right;
 }
