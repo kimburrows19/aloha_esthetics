@@ -1,11 +1,21 @@
 <?php 
 echo $this->getChildHtml('new_products');
 ?>
+
+<div id="instafeed-head"> Instagram: <a href="https://www.instagram.com/lashes.by.creeland/">lashes.by.creeland</a>
+</div>
+<div id="instafeed"></div>
+
+
 <script type="text/javascript">
 var userFeed = new Instafeed({
     get: 'user',
-    userId: 'lashes.by.creeland',
-    accessToken: 'd2b79f825b3b4cf5ab2ffef0b774459a'
+    limit: '6',
+    resolution: 'low_resolution',
+    userId: '2976525140',
+    accessToken: '2976525140.467ede5.906371d6d5df4ec3ac06d8ba760219ad',
+    template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
 });
 userFeed.run();
+
 </script>

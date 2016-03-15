@@ -208,3 +208,26 @@ body .promos > li {
 .cms-index-noroute h2.subtitle {
     display: none;
 }
+
+/* -------------------------------------------- *
+ * instagram instafeed.js instafeedjs.com
+ */
+#instafeed-head {
+    background-color: #FAFAFA;
+    padding-top: 15px;
+    padding-left: 26px;
+    font-size: 18px;
+}
+ #instafeed img{
+    display:inline;
+    margin: 10px;
+    border-radius: 10px;
+ }
+ #instafeed {
+    background-color: #FAFAFA;
+    padding: 5px 20px 20px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+ }
+
