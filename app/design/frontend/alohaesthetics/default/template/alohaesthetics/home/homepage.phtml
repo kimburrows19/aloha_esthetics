@@ -1,2 +1,11 @@
 <?php 
 echo $this->getChildHtml('new_products');
+?>
+<script type="text/javascript">
+var userFeed = new Instafeed({
+    get: 'user',
+    userId: 'lashes.by.creeland',
+    accessToken: 'd2b79f825b3b4cf5ab2ffef0b774459a'
+});
+userFeed.run();
+</script>

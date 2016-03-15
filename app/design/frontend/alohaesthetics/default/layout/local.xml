@@ -7,6 +7,10 @@
             <script>js/jquery.flexslider-min.js</script>
         </action>
         <action method="addItem">
+            <type>skin_js</type>
+            <script>js/instafeed.min.js</script>
+        </action>
+        <action method="addItem">
             <type>skin_css</type>
             <name>css/jquery/flexslider.css</name>
         </action>
