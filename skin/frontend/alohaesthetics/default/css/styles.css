@@ -1281,7 +1281,7 @@ a.button:hover {
 /* line 575, ../scss/core/_common.scss */
 .breadcrumbs {
   overflow: hidden;
-  margin: -15px 0 15px;
+  margin: 0px 0 15px 10px;
 }
 
 /* line 580, ../scss/core/_common.scss */
