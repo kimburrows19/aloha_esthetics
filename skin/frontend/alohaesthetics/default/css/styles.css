@@ -3649,7 +3649,7 @@ body {
  * ============================================ */
 /* line 53, ../scss/layout/_header.scss */
 .header-language-background {
-  padding: 10px;
+  padding: 8px 0 0 0;
   background-color: #33B0C2;
   text-transform: uppercase;
   border-bottom: 3px solid #F96C96;
@@ -3723,39 +3723,37 @@ body {
   float: left;
   width: 65%;
   min-width: 100px;
-  min-height: 44px;
   text-align: center;
   padding: 10px;
 }
-/* line 130, ../scss/layout/_header.scss */
+/* line 129, ../scss/layout/_header.scss */
 .logo img {
   max-width: 100%;
 }
-/* line 134, ../scss/layout/_header.scss */
+/* line 133, ../scss/layout/_header.scss */
 .logo .small {
   display: block;
 }
-/* line 137, ../scss/layout/_header.scss */
+/* line 136, ../scss/layout/_header.scss */
 .logo .large {
   display: none;
 }
 
-/* line 142, ../scss/layout/_header.scss */
+/* line 141, ../scss/layout/_header.scss */
 .logo:hover {
   opacity: 0.8;
 }
 
 @media only screen and (min-width: 771px) {
-  /* line 150, ../scss/layout/_header.scss */
+  /* line 149, ../scss/layout/_header.scss */
   .logo {
     max-width: 300px;
-    min-height: 90px;
   }
-  /* line 154, ../scss/layout/_header.scss */
+  /* line 151, ../scss/layout/_header.scss */
   .logo .small {
     display: none;
   }
-  /* line 157, ../scss/layout/_header.scss */
+  /* line 154, ../scss/layout/_header.scss */
   .logo .large {
     display: block;
   }
@@ -3763,7 +3761,7 @@ body {
 /* ============================================ *
  * Skip Links
  * ============================================ */
-/* line 168, ../scss/layout/_header.scss */
+/* line 165, ../scss/layout/_header.scss */
 .skip-links {
   clear: both;
   overflow: hidden;
@@ -3772,7 +3770,7 @@ body {
 }
 
 @media only screen and (min-width: 771px) {
-  /* line 179, ../scss/layout/_header.scss */
+  /* line 176, ../scss/layout/_header.scss */
   .skip-links {
     border: 0;
   }
@@ -3780,7 +3778,7 @@ body {
 /* -------------------------------------------- *
  * Skip - Link
  */
-/* line 189, ../scss/layout/_header.scss */
+/* line 186, ../scss/layout/_header.scss */
 .skip-link {
   position: relative;
   float: left;
@@ -3792,29 +3790,29 @@ body {
   text-align: center;
 }
 
-/* line 200, ../scss/layout/_header.scss */
+/* line 197, ../scss/layout/_header.scss */
 a.skip-link {
   text-decoration: none;
 }
 
-/* line 204, ../scss/layout/_header.scss */
+/* line 201, ../scss/layout/_header.scss */
 .skip-link:not(.skip-active):hover {
   opacity: 0.8;
 }
 
 @media only screen and (max-width: 770px) {
-  /* line 212, ../scss/layout/_header.scss */
+  /* line 209, ../scss/layout/_header.scss */
   .skip-link {
     border-right: 1px solid #EDEDED;
   }
 
-  /* line 216, ../scss/layout/_header.scss */
+  /* line 213, ../scss/layout/_header.scss */
   .skip-link:last-child {
     border-right: 0;
   }
 }
 @media only screen and (min-width: 500px) {
-  /* line 226, ../scss/layout/_header.scss */
+  /* line 223, ../scss/layout/_header.scss */
   .skip-link {
     width: 25%;
   }
@@ -3823,13 +3821,13 @@ a.skip-link {
  * Skip Link - Active
  */
 @media only screen and (max-width: 770px) {
-  /* line 237, ../scss/layout/_header.scss */
+  /* line 234, ../scss/layout/_header.scss */
   .skip-link.skip-active {
     background: #EDEDED;
     color: inherit;
   }
 
-  /* line 242, ../scss/layout/_header.scss */
+  /* line 239, ../scss/layout/_header.scss */
   .skip-link.skip-active span {
     color: inherit;
   }
@@ -3837,7 +3835,7 @@ a.skip-link {
 /* -------------------------------------------- *
  * Skip Link - Icon
  */
-/* line 252, ../scss/layout/_header.scss */
+/* line 249, ../scss/layout/_header.scss */
 .skip-link .icon {
   display: inline-block;
   width: 30px;
@@ -3845,14 +3843,14 @@ a.skip-link {
   vertical-align: middle;
 }
 
-/* line 259, ../scss/layout/_header.scss */
+/* line 256, ../scss/layout/_header.scss */
 .skip-link.skip-nav .icon,
 .skip-link.skip-cart:not(.no-count) .icon {
   margin-right: 3px;
 }
 
 @media only screen and (min-width: 500px) {
-  /* line 266, ../scss/layout/_header.scss */
+  /* line 263, ../scss/layout/_header.scss */
   .skip-link .icon {
     margin-right: 3px;
   }
@@ -3860,13 +3858,13 @@ a.skip-link {
 /* -------------------------------------------- *
  * Skip Link - Label
  */
-/* line 276, ../scss/layout/_header.scss */
+/* line 273, ../scss/layout/_header.scss */
 .skip-link .label {
   display: none;
 }
 
 @media only screen and (min-width: 500px) {
-  /* line 284, ../scss/layout/_header.scss */
+  /* line 281, ../scss/layout/_header.scss */
   .skip-link .label {
     display: inline;
   }
@@ -3874,12 +3872,12 @@ a.skip-link {
 /* ============================================ *
  * Skip Content
  * ============================================ */
-/* line 294, ../scss/layout/_header.scss */
+/* line 291, ../scss/layout/_header.scss */
 .skip-content {
   display: none;
 }
 
-/* line 298, ../scss/layout/_header.scss */
+/* line 295, ../scss/layout/_header.scss */
 .skip-content.skip-active {
   display: block;
   background: #EDEDED;
@@ -3889,7 +3887,7 @@ a.skip-link {
  * Global Header Navigation
  * ============================================ */
 @media only screen and (max-width: 770px) {
-  /* line 311, ../scss/layout/_header.scss */
+  /* line 308, ../scss/layout/_header.scss */
   #header-account li a,
   .nav-primary a.level0 {
     padding: 0 15px 0 25px;
@@ -3900,27 +3898,27 @@ a.skip-link {
     line-height: 30px;
   }
 
-  /* line 321, ../scss/layout/_header.scss */
+  /* line 318, ../scss/layout/_header.scss */
   #header-account li:last-child a,
   .nav-primary li.level0:last-child a.level0 {
     border-bottom: 0;
   }
 
-  /* line 326, ../scss/layout/_header.scss */
+  /* line 323, ../scss/layout/_header.scss */
   .no-touch #header-account a:hover,
   .no-touch .nav-primary a:hover {
     background-color: #F4F4F4;
     text-decoration: none;
   }
 }
-/* line 334, ../scss/layout/_header.scss */
+/* line 331, ../scss/layout/_header.scss */
 .account-cart-wrapper {
   position: absolute;
   top: 0px;
   right: 0px;
 }
 @media only screen and (max-width: 770px) {
-  /* line 334, ../scss/layout/_header.scss */
+  /* line 331, ../scss/layout/_header.scss */
   .account-cart-wrapper {
     position: static;
   }
