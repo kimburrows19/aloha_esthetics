@@ -134,9 +134,9 @@ html[xmlns] .slides {
 /* Direction Nav */
 /* line 50, ../../scss/jquery/flexslider.scss */
 .flex-direction-nav li a {
-  width: 52px;
-  height: 52px;
-  margin: -13px 0 0;
+  width: 60px;
+  height: 60px;
+  margin: -40px -9px 0;
   display: block;
   background: url(theme/bg_direction_nav.png) no-repeat 0 0;
   position: absolute;
@@ -147,13 +147,13 @@ html[xmlns] .slides {
 
 /* line 51, ../../scss/jquery/flexslider.scss */
 .flex-direction-nav li .next {
-  background-position: -52px 0;
-  right: -21px;
+  background-position: -60px 0;
+  right: -11px;
 }
 
 /* line 52, ../../scss/jquery/flexslider.scss */
 .flex-direction-nav li .prev {
-  left: -20px;
+  left: -14px;
 }
 
 /* line 53, ../../scss/jquery/flexslider.scss */
@@ -168,7 +168,7 @@ html[xmlns] .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  bottom: -30px;
+  bottom: 0px;
   text-align: center;
 }
 
@@ -190,9 +190,10 @@ html[xmlns] .slides {
   width: 13px;
   height: 13px;
   display: block;
-  background: url(theme/bg_control_nav.png) no-repeat 0 0;
   cursor: pointer;
   text-indent: -9999px;
+  background: rgba(252, 251, 251, 0.75);
+  border-radius: 20px;
 }
 
 /* line 60, ../../scss/jquery/flexslider.scss */
