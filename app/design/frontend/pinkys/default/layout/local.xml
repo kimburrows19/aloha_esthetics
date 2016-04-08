@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+        <reference name="header">
+            <block type="core/template" name="svg.pinkys-logo" as="svg.pinkys-logo"
+                   template="page/html/header/svg/pinkys-logo.phtml"/>
+        </reference>
+	</default>
+	<cms_index_index>
+		<reference name="head">
+			<action method="addItem">
+	            <type>skin_js</type>
+	            <script>js/jquery.flexslider-min.js</script>
+	        </action>
+	        <action method="addItem">
+	            <type>skin_js</type>
+	            <script>js/instafeed.min.js</script>
+	        </action>
+	        <action method="addItem">
+	            <type>skin_css</type>
+	            <name>css/jquery/flexslider.css</name>
+	        </action>
+		</reference>
+		<reference name="content">
+			<block type="core/template" name="ae_home" as="ae_home" template="alohaesthetics/home/homepage.phtml">
+		        <block type="cms/block" name="new_products">
+		            <action method="setBlockId"><block_id>new_products</block_id></action>
+		        </block> 
+			</block>
+		</reference>
+		
+	</cms_index_index>
+</layout>
