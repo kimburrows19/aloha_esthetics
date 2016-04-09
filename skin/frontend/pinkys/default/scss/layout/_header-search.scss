@@ -55,9 +55,8 @@
  * Search - Skip Content
  * ============================================ */
 
-#header-search {
-    
-
+#header-search-s{
+    //display:none;
 }
 
 // ---------------------------------------------
@@ -88,6 +87,9 @@
     height: 22px;
     padding-right: 40px;
     font-family: $f-stack-special;
+    @media only screen and (max-width: $bp-medium + 1){ 
+        height: 50px;
+    }
 }
 
 #search_mini_form .search-button {
@@ -100,6 +102,10 @@
     border: 0;
     background: none;
     background-color: #33B0C2;
+     @media only screen and (max-width: $bp-medium + 1){ 
+        width: 48px;
+        height: 50px;
+    }
 }
 
 #search_mini_form .search-button:before {

@@ -58,7 +58,6 @@
 
     .skip-cart:hover {
     }
-
     #header-cart.skip-active {
         @include menu;
         display: block;
@@ -66,7 +65,11 @@
         width: 320px;
         background: white;
     }
-
+}
+#header-cart {
+    @media only screen and (max-width: $bp-medium + 1){ 
+        display: none;
+    }
 }
 
 /* -------------------------------------------- *

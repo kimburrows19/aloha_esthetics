@@ -3169,6 +3169,9 @@ body {
   margin-left: 15px;
   margin-right: 80px;
   position: relative;
+  padding-bottom: 10px;
+  height: 100px;
+  overflow: hidden;
 }
 @media only screen and (max-width: 771px) {
   .page-header-container {
@@ -3296,6 +3299,7 @@ body {
   right: 0;
   background-color: rgba(249, 108, 150, 0.73);
   margin-top: 6px;
+  border-radius: 4px;
   padding: 8px;
 }
 @media only screen and (max-width: 771px) {
@@ -3495,11 +3499,6 @@ a.skip-link {
 /* ============================================ *
  * Nav - Skip Content
  * ============================================ */
-@media only screen and (max-width: 770px) {
-  #header-nav {
-    padding: 5px 0;
-  }
-}
 @media only screen and (min-width: 771px) {
   #header-nav {
     display: block;
@@ -3717,6 +3716,11 @@ a.skip-link {
   padding-right: 40px;
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
+@media only screen and (max-width: 771px) {
+  #search {
+    height: 50px;
+  }
+}
 
 #search_mini_form .search-button {
   text-indent: -9999px;
@@ -3728,6 +3732,12 @@ a.skip-link {
   border: 0;
   background: none;
   background-color: #33B0C2;
+}
+@media only screen and (max-width: 771px) {
+  #search_mini_form .search-button {
+    width: 48px;
+    height: 50px;
+  }
 }
 
 #search_mini_form .search-button:before {
@@ -3844,6 +3854,12 @@ a.skip-link {
     background: white;
   }
 }
+@media only screen and (max-width: 771px) {
+  #header-cart {
+    display: none;
+  }
+}
+
 /* -------------------------------------------- *
  * Skip Cart Notifier
  */
@@ -9607,6 +9623,11 @@ div.paypal-logo span > img {
   border-top: none;
   left: 50%;
   top: -7px;
+}
+@media only screen and (max-width: 771px) {
+  .search-autocomplete {
+    margin-bottom: 10px;
+  }
 }
 
 /* ============================================ *

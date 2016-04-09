@@ -78,6 +78,9 @@
         left: 50%;
         top: -7px;
     }
+     @media only screen and (max-width: $bp-medium + 1){ 
+        margin-bottom: 10px;
+    }
 }
 
 /* ============================================ *
