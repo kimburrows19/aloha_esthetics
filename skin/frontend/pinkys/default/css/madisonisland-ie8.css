@@ -40,7 +40,7 @@ $mq-fixed-value: 1024;
 body.cms-home .main-container {
   margin: 0 auto;
   max-width: 1220px;
-  padding: 19px 10px 0 10px;
+  padding: 0px 10px 0 10px;
 }
 body.cms-home .slideshow-container {
   margin-top: 0;

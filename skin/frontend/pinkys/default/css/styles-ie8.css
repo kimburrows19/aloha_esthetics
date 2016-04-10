@@ -2952,7 +2952,7 @@ a.skip-link {
 #header-nav {
   display: block;
   /* Force visibility */
-  border-bottom: 1px solid #EDEDED;
+  background-color: rgba(51, 176, 194, 0.67);
 }
 
 /* ============================================ *
@@ -3008,14 +3008,13 @@ a.skip-link {
 .nav-primary li.level0,
 .nav-primary a.level0 {
   display: inline-block;
-  background-color: #ffffff;
 }
 .nav-primary li:last-child > a {
   border-bottom: none;
 }
 .nav-primary a:hover,
 .nav-primary li:hover > a {
-  color: #33B0C2;
+  background-color: #FBFBFB;
 }
 .nav-primary .menu-active {
   z-index: 200;

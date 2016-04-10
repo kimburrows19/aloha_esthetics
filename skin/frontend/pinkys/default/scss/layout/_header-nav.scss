@@ -86,7 +86,7 @@
 
     #header-nav {
         display: block; /* Force visibility */
-        border-bottom: 1px solid $c-module-border-light;
+        background-color: rgba(51, 176, 194, 0.67);
     }
 
 }
@@ -205,7 +205,6 @@ $nav-primary-height: 30px;
         li.level0,
         a.level0 {
             display: inline-block;
-            background-color: #ffffff;
         }
 
         li:last-child > a {
@@ -214,7 +213,7 @@ $nav-primary-height: 30px;
 
         a:hover,
         li:hover > a {
-            color: $c-action;
+            background-color: #FBFBFB;
         }
 
         .menu-active {
