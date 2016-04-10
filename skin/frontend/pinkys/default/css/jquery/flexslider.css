@@ -7,13 +7,11 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 /* Browser Resets */
-/* line 11, ../../scss/jquery/flexslider.scss */
 .flex-container a:active,
 .flexslider a:active {
   outline: none;
 }
 
-/* line 13, ../../scss/jquery/flexslider.scss */
 .slides,
 .flex-control-nav,
 .flex-direction-nav {
@@ -24,32 +22,27 @@
 
 /* FlexSlider Necessary Styles
 *********************************/
-/* line 19, ../../scss/jquery/flexslider.scss */
 .flexslider {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* line 20, ../../scss/jquery/flexslider.scss */
 .flexslider .slides > li {
   display: none;
 }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-/* line 21, ../../scss/jquery/flexslider.scss */
 .flexslider .slides img {
   max-width: 100%;
   display: block;
 }
 
-/* line 22, ../../scss/jquery/flexslider.scss */
 .flex-pauseplay span {
   text-transform: capitalize;
 }
 
 /* Clearfix for the .slides element */
-/* line 25, ../../scss/jquery/flexslider.scss */
 .slides:after {
   content: ".";
   display: block;
@@ -59,12 +52,10 @@
   height: 0;
 }
 
-/* line 26, ../../scss/jquery/flexslider.scss */
 html[xmlns] .slides {
   display: block;
 }
 
-/* line 27, ../../scss/jquery/flexslider.scss */
 * html .slides {
   height: 1%;
 }
@@ -72,14 +63,12 @@ html[xmlns] .slides {
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
-/* line 32, ../../scss/jquery/flexslider.scss */
 .no-js .slides > li:first-child {
   display: block;
 }
 
 /* FlexSlider Default Theme
 *********************************/
-/* line 37, ../../scss/jquery/flexslider.scss */
 .flexslider {
   background: #fff;
   position: relative;
@@ -90,18 +79,15 @@ html[xmlns] .slides {
   zoom: 1;
 }
 
-/* line 38, ../../scss/jquery/flexslider.scss */
 .flexslider .slides {
   zoom: 1;
 }
 
-/* line 39, ../../scss/jquery/flexslider.scss */
 .flexslider .slides > li {
   position: relative;
 }
 
 /* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
-/* line 41, ../../scss/jquery/flexslider.scss */
 .flex-container {
   zoom: 1;
   position: relative;
@@ -109,7 +95,6 @@ html[xmlns] .slides {
 
 /* Caption style */
 /* IE rgba() hack */
-/* line 45, ../../scss/jquery/flexslider.scss */
 .flex-caption {
   background: none;
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
@@ -117,7 +102,6 @@ html[xmlns] .slides {
   zoom: 1;
 }
 
-/* line 47, ../../scss/jquery/flexslider.scss */
 .flex-caption {
   width: 96%;
   padding: 2%;
@@ -132,7 +116,6 @@ html[xmlns] .slides {
 }
 
 /* Direction Nav */
-/* line 50, ../../scss/jquery/flexslider.scss */
 .flex-direction-nav li a {
   width: 60px;
   height: 60px;
@@ -145,18 +128,15 @@ html[xmlns] .slides {
   text-indent: -9999px;
 }
 
-/* line 51, ../../scss/jquery/flexslider.scss */
 .flex-direction-nav li .next {
   background-position: -60px 0;
   right: -11px;
 }
 
-/* line 52, ../../scss/jquery/flexslider.scss */
 .flex-direction-nav li .prev {
   left: -14px;
 }
 
-/* line 53, ../../scss/jquery/flexslider.scss */
 .flex-direction-nav li .disabled {
   opacity: .3;
   filter: alpha(opacity=30);
@@ -164,7 +144,6 @@ html[xmlns] .slides {
 }
 
 /* Control Nav */
-/* line 56, ../../scss/jquery/flexslider.scss */
 .flex-control-nav {
   width: 100%;
   position: absolute;
@@ -172,7 +151,6 @@ html[xmlns] .slides {
   text-align: center;
 }
 
-/* line 57, ../../scss/jquery/flexslider.scss */
 .flex-control-nav li {
   margin: 0 0 0 5px;
   display: inline-block;
@@ -180,12 +158,10 @@ html[xmlns] .slides {
   *display: inline;
 }
 
-/* line 58, ../../scss/jquery/flexslider.scss */
 .flex-control-nav li:first-child {
   margin: 0;
 }
 
-/* line 59, ../../scss/jquery/flexslider.scss */
 .flex-control-nav li a {
   width: 13px;
   height: 13px;
@@ -196,19 +172,16 @@ html[xmlns] .slides {
   border-radius: 20px;
 }
 
-/* line 60, ../../scss/jquery/flexslider.scss */
 .flex-control-nav li a:hover {
   background-position: 0 -13px;
 }
 
-/* line 61, ../../scss/jquery/flexslider.scss */
 .flex-control-nav li a.active {
   background-position: 0 -26px;
   cursor: default;
 }
 
 @media only screen and (max-width: 770px) {
-  /* line 63, ../../scss/jquery/flexslider.scss */
   .flex-container {
     display: none;
   }

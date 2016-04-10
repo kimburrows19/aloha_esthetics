@@ -23,6 +23,9 @@
 		</reference>
 		<reference name="content">
 			<block type="core/template" name="ae_home" as="ae_home" template="alohaesthetics/home/homepage.phtml">
+				<block type="cms/block" name="flexslider">
+				    <action method="setBlockId"><block_id>homepage_banner</block_id></action>
+				</block>
 		        <block type="cms/block" name="new_products">
 		            <action method="setBlockId"><block_id>new_products</block_id></action>
 		        </block> 
