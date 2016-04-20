@@ -31,8 +31,17 @@ $mq-fixed-value: 1024;
 
 // ----------------------------------------------
 */
-/* Font Styles */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@font-face {
+  font-family: "thirstysoftbold";
+  src: url("fonts/thirstysoftbold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "thirstysoftregular";
+  src: url("fonts/thirstysoftregular.woff") format("woff");
+}
+/* Font Styles */
 /* Media Queries */
 /* Setting the Web Font inside a media query so that Outlook doesn't try to render the web font */
 @media screen {

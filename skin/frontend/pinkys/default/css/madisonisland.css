@@ -31,6 +31,15 @@ $mq-fixed-value: 1024;
 
 // ----------------------------------------------
 */
+@font-face {
+  font-family: "thirstysoftbold";
+  src: url("fonts/thirstysoftbold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "thirstysoftregular";
+  src: url("fonts/thirstysoftregular.woff") format("woff");
+}
 /* ============================================ *
  * Homepage
  * ============================================ */
