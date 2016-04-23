@@ -576,6 +576,10 @@ a.button:hover {
     overflow: hidden;
     margin: 0px 0 15px 10px;
 }
+.catalog-product-view .breadcrumbs{
+    width: 80%;
+    margin: 0 auto;
+}
 
 .breadcrumbs li {
     float: left;
@@ -795,6 +799,7 @@ a.button:hover {
     padding: 0 10px;
 }
 
+
 .col-left {
     float: left;
     width: percentage(240px/960px);
@@ -860,6 +865,10 @@ a.button:hover {
             width: percentage(200px/760px);
         }
     }
+}
+.catalog-product-view .col-main{
+    width: 80%;
+    margin: 0 auto;
 }
 
 @include bp(max-width, 1000px) {

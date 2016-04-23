@@ -1155,6 +1155,11 @@ a.button:hover {
   margin: 0px 0 15px 10px;
 }
 
+.catalog-product-view .breadcrumbs {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .breadcrumbs li {
   float: left;
   font-size: 12px;
@@ -1443,6 +1448,11 @@ a.button:hover {
 }
 .col3-layout .col-wrapper .col-left {
   width: 26.31579%;
+}
+
+.catalog-product-view .col-main {
+  width: 80%;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 1000px) {
