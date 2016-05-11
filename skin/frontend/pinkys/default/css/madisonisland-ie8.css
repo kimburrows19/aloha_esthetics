@@ -227,7 +227,7 @@ body .promos > li {
   padding: 22px 0;
   background-image: url("../images/heart1-01.png");
   text-align: center;
-  margin-top: 20px;
+  margin-top: -20px;
   display: inline-block;
 }
 
