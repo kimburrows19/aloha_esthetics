@@ -1,0 +1,43 @@
+<div class='pads'>
+<!-- <div class='image-pad left'>
+	<div class='pad-text'><h3>Eyelash Extensions</h3>
+		<h3>Lashes & Adhesive </h3>
+	</div>
+	<img src="<?php echo $this->getSkinUrl('images/eyelash_extensions1.png', array('_secure'=>true));?>"/>
+</div>
+<div class='image-pad'>
+	<div class='pad-text'><h3>Waxing Service</h3>
+		<h3>Face.Lips.Eyebrows.Legs.Underarms</h3>
+	</div>
+	<img src="<?php echo $this->getSkinUrl('images/waxing.png', array('_secure'=>true));?>"/>
+</div> -->
+<div class="image-pad flexslider">
+<?php echo $this->getChildHtml('flexslider'); ?>
+</div>
+<a href="<?php echo Mage::getBaseUrl() . 'eyelash-extensions.html'?>" class='image-pad'>
+	<!-- <div class='pad-text'><p>Strip lashes.Falsies</p>
+	</div> -->
+	<img src="<?php echo $this->getSkinUrl('images/eyelash_extensions.png', array('_secure'=>true));?>"/>
+	<div>
+
+	</div>
+</a>
+<a class='image-pad'>
+	<!-- <div class='pad-text'><p>Waxing Service</br>
+		Face.Lips.Eyebrows.</br>
+		Legs.Underarms</p>
+	</div> -->
+	<img src="<?php echo $this->getSkinUrl('images/waxing_service.png', array('_secure'=>true));?>"/>
+</a> 
+<a class='image-pad'>
+	<img src="<?php echo $this->getSkinUrl('images/makeup_brush.png', array('_secure'=>true));?>"/>
+</a>
+<a class='image-pad' href="<?php echo Mage::getBaseUrl() . 'skin-care.html'?>">
+	<img src="<?php echo $this->getSkinUrl('images/skin_care.png', array('_secure'=>true));?>"/>
+</a>
+<a class='image-pad'>
+	<img src="<?php echo $this->getSkinUrl('images/facial_service.png', array('_secure'=>true));?>"/>
+</a> 
+</div>
+
+

@@ -48,8 +48,7 @@ $mq-fixed-value: 1024;
  */
 body.cms-home .main-container {
   margin: 0 auto;
-  max-width: 1220px;
-  padding: 0px 10px 0 10px;
+  padding: 0 0;
 }
 body.cms-home .slideshow-container {
   margin-top: 0;
@@ -241,6 +240,78 @@ body .promos > li {
   text-align: center;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+
+/* -------------------------------------------- *
+ * category pad
+ */
+.pads {
+  background-color: rgba(249, 108, 150, 0.38);
+  width: 100%;
+  padding: 22px 0;
+  background-image: url("../images/heart1-01.png");
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.image-pad {
+  width: 33%;
+  display: inline-block;
+  border: 2px solid white;
+  position: relative;
+  float: left;
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+.image-pad .pad-text {
+  position: absolute;
+  left: 10px;
+  top: 208px;
+}
+.image-pad .pad-text p {
+  text-align: left;
+  color: white;
+  font-size: 23px;
+  font-family: raleway;
+  text-shadow: 1px 1px 1px #000;
+}
+.image-pad.left {
+  float: left;
+  position: relative;
+}
+.image-pad.left .pad-text {
+  position: absolute;
+  left: 10px;
+}
+.image-pad.right {
+  float: right;
+}
+.image-pad img {
+  width: 100%;
+  image-rendering: -moz-crisp-edges;
+}
+.image-pad.flexslider {
+  float: left;
+}
+@media only screen and (max-width: 1200px) {
+  .image-pad {
+    width: 48%;
+    float: none;
+  }
+  .image-pad.flexslider {
+    float: none;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .image-pad {
+    margin-left: 1px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .image-pad {
+    width: 100%;
+  }
 }
 
 /* ============================================ *
