@@ -145,6 +145,7 @@ html[xmlns] .slides {
 
 /* Control Nav */
 .flex-control-nav {
+  display: none;
   width: 100%;
   position: absolute;
   bottom: 0px;
@@ -179,10 +180,4 @@ html[xmlns] .slides {
 .flex-control-nav li a.active {
   background-position: 0 -26px;
   cursor: default;
-}
-
-@media only screen and (max-width: 770px) {
-  .flex-container {
-    display: none;
-  }
 }

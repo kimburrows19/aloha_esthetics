@@ -3250,6 +3250,7 @@ body {
     margin: 0 auto;
     padding: 0 10px;
     background-color: rgba(237, 64, 142, 0.19);
+    background-image: url("../images/heart1-02.png");
   }
 }
 .header-language-container,
