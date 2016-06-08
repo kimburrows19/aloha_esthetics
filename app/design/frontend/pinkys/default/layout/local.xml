@@ -4,6 +4,8 @@
         <reference name="header">
             <block type="core/template" name="svg.pinkys-logo" as="svg.pinkys-logo"
                    template="page/html/header/svg/pinkys-logo.phtml"/>
+            <block type="core/template" name="svg.freeshipping" as="svg.freeshipping"
+                   template="page/html/header/svg/freeshipping.phtml"/>
         </reference>
 	</default>
 	<cms_index_index>

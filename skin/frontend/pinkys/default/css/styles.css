@@ -3242,7 +3242,7 @@ body {
  * ============================================ */
 .page-header-container {
   margin-left: 15px;
-  margin-right: 80px;
+  margin-right: 15px;
   position: relative;
   padding-bottom: 10px;
   height: 100px;
@@ -3251,6 +3251,7 @@ body {
 @media only screen and (max-width: 771px) {
   .page-header-container {
     margin-right: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -3337,7 +3338,6 @@ body {
   width: 65%;
   min-width: 100px;
   text-align: center;
-  padding: 10px;
 }
 .logo img {
   max-width: 100%;
@@ -3347,6 +3347,9 @@ body {
 }
 .logo .large {
   display: none;
+}
+.logo svg {
+  width: 231px;
 }
 
 .logo:hover {
@@ -3378,6 +3381,11 @@ body {
   border-radius: 4px;
   padding: 8px;
 }
+@media only screen and (max-width: 980px) {
+  .skip-links-panel {
+    width: 45%;
+  }
+}
 @media only screen and (max-width: 771px) {
   .skip-links-panel {
     display: none;
@@ -3389,11 +3397,6 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1200px) {
-  .skip-links-panel {
-    width: 50%;
-  }
-}
 @media only screen and (min-width: 771px) {
   .skip-links {
     border: 0;
@@ -3539,6 +3542,29 @@ a.skip-link {
 }
 .account-cart-wrapper-s .skip-link {
   width: 47%;
+}
+
+#shipping {
+  width: 203px;
+  display: inline-block;
+}
+@media only screen and (max-width: 980px) {
+  #shipping {
+    width: 105px;
+    margin-top: 48px;
+  }
+}
+@media only screen and (max-width: 771px) {
+  #shipping {
+    width: 123px;
+    margin-top: 21px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #shipping {
+    width: 110px;
+    margin-top: 15px;
+  }
 }
 
 /* ============================================ *

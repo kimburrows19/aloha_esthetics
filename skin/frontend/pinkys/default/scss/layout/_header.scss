@@ -29,14 +29,16 @@
 
 .page-header-container {
         margin-left: 15px;
-        margin-right: 80px;
+        margin-right: 15px;
         position: relative;
         padding-bottom: 10px;
         height: 100px;
         overflow: hidden;
         @media only screen and (max-width: $bp-medium + 1){ 
             margin-right: 15px;
+            margin-left:15px;
         }
+
 }
 @include bp(min-width, $bp-medium + 1)  {
 
@@ -134,7 +136,7 @@
     width: 65%;
     min-width: 100px;
     text-align: center;
-    padding: $gap;
+    //padding: $gap;
 
     img {
         max-width: 100%;
@@ -145,6 +147,9 @@
     }
     .large {
         display: none;
+    }
+    svg{
+        width: 231px;
     }
 }
 
@@ -181,7 +186,10 @@
     margin-top: 6px;
     border-radius: 4px;
     padding: 8px;
-     @media only screen and (max-width: $bp-medium + 1){ 
+    @media only screen and (max-width: $bp-large + 1){ 
+        width: 45%;
+    }
+    @media only screen and (max-width: $bp-medium + 1){ 
         display: none;
     }
 }
@@ -189,11 +197,7 @@
     clear: both;
     overflow: hidden;
 }
-@media only screen and (max-width: $bp-xlarge + 1){ 
-    .skip-links-panel {
-        width: 50%;
-    }
-}
+
 
 // ---------------------------------------------
 
@@ -375,3 +379,22 @@ a.skip-link {
     }
 }
 
+#shipping {
+    width:203px; 
+    display:inline-block;
+    @media only screen and (max-width: $bp-large + 1){ 
+        width: 105px;
+        margin-top:48px;
+    
+    }
+    @media only screen and (max-width: $bp-medium + 1){ 
+        width: 123px;
+        margin-top:21px;
+    
+    }
+    @media only screen and (max-width: $bp-small + 1){ 
+        width: 110px;
+        margin-top: 15px;
+    
+    }
+}
