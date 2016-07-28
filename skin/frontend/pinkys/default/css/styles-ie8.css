@@ -2835,6 +2835,7 @@ body {
   width: 65%;
   min-width: 100px;
   text-align: center;
+  margin-right: 10px;
 }
 .logo img {
   max-width: 100%;
@@ -2855,7 +2856,7 @@ body {
 
 .logo {
   max-width: 300px;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 .logo .small {
   display: none;

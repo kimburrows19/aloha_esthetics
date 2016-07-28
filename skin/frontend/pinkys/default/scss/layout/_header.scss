@@ -136,7 +136,7 @@
     width: 65%;
     min-width: 100px;
     text-align: center;
-    //padding: $gap;
+    margin-right: 10px;
 
     img {
         max-width: 100%;
@@ -163,13 +163,13 @@
 
     .logo {
         max-width: 300px;
+        margin-right: 10px;
         .small {
             display: none;
         }
         .large {
             display: block;
         }
-        padding-right: 10px;
     }
 
 }
