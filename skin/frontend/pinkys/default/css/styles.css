@@ -5101,6 +5101,9 @@ p.product-name a:hover {
 /* ============================================ *
  * Catalog - Product
  * ============================================ */
+.product-view .product-essential {
+  margin-top: 16px;
+}
 .product-view .product-essential .extra-info .ratings .rating-box,
 .product-view .product-essential .extra-info .ratings .amount {
   float: left;
@@ -5258,6 +5261,7 @@ p.product-name a:hover {
 }
 .product-img-box .product-image {
   margin-bottom: 10px;
+  border: 6px solid #f4f4f4;
 }
 .product-img-box .product-image img {
   max-width: 100%;
@@ -5327,7 +5331,7 @@ p.product-name a:hover {
 .product-view .product-shop,
 .product-view .add-to-cart-wrapper,
 .product-view .block-related {
-  padding-left: 5px;
+  padding-left: 20px;
 }
 
 .product-img-box {
@@ -5410,7 +5414,7 @@ p.product-name a:hover {
   text-align: center;
 }
 .product-view .add-to-cart-buttons .button {
-  min-height: 40px;
+  min-height: 80px;
   line-height: 40px;
   font-size: 16px;
   padding: 0px 30px;
@@ -5418,6 +5422,7 @@ p.product-name a:hover {
   min-width: 160px;
   width: 100%;
   white-space: normal;
+  border-radius: 7px;
 }
 .product-view .alert-price,
 .product-view .alert-stock {

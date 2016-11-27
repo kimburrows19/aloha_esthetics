@@ -30,6 +30,7 @@
 .product-view {
     .product-essential {
 
+        margin-top: 16px;
         .extra-info {
             .ratings {
                 .rating-box,
@@ -247,6 +248,7 @@
 
     .product-image {
         margin-bottom: $box-spacing;
+        border: 6px solid #f4f4f4;
     }
 
     .product-image img {
@@ -308,7 +310,7 @@
 .product-view .product-shop,
 .product-view .add-to-cart-wrapper,
 .product-view .block-related {
-    padding-left: $trim/2;
+    padding-left: 20px;
 }
 
 .product-img-box {
@@ -402,7 +404,7 @@
     }
 
     .add-to-cart-buttons .button {
-        min-height: 40px;
+        min-height: 80px;
         line-height: 40px;
         font-size: $f-size-xl;
         padding: 0px 30px;
@@ -410,6 +412,7 @@
         min-width: 160px;
         width: 100%;
         white-space: normal;
+        border-radius: 7px;
     }
 
     .alert-price,
