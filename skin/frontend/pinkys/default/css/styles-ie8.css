@@ -4683,6 +4683,9 @@ p.product-name a:hover {
 .collateral-tabs dd h2 {
   display: none;
 }
+.collateral-tabs b.thirsty {
+  font-family: thirstysoftregular;
+}
 
 .box-collateral {
   clear: both;
