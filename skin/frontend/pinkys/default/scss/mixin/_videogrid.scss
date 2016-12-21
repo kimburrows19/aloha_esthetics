@@ -1,0 +1,52 @@
+@mixin grid {
+    width: 18%;
+    margin: 1%;
+    float: left;
+    @media (max-width: 1366px) {
+      width: 23%;
+       padding-bottom: 50px;
+       .videoTitle{
+         bottom: -46px;
+       }
+    }
+    @media (max-width: 1024px) {
+      width: 31.333%;
+       padding-bottom: 55px;
+       .videoTitle{
+         bottom: -46px;
+       }
+    }
+    @media (max-width: 600px) {
+      width: 48%;
+       padding-bottom: 60px;
+       .videoTitle{
+         bottom: -40px;
+       }
+    }
+    @media (max-width: 480px){
+      display: block;
+      width: 96%;
+      margin: 2%;
+      float: none;
+       padding-bottom: 70px;
+       .videoTitle{
+         bottom: -60px;
+       }
+    }
+    @media (max-width: 360px) {
+      display: block;
+      width: 96%;
+      margin: 2%;
+      float: none;
+       padding-bottom: 70px;
+       .videoTitle{
+         bottom: -50px;
+       }
+    }
+  }
+  @mixin hover {
+    opacity: 1;
+    &:hover, &:active, &:focus {
+      opacity: 0.75;
+    }
+  }
