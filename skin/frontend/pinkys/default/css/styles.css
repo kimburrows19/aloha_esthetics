@@ -3275,7 +3275,10 @@ body {
     margin: 0 auto;
     padding: 0 10px;
     background-color: rgba(237, 64, 142, 0.19);
-    background-image: url("../images/heart1-02.png");
+    background-image: url("../images/decor.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -51px;
   }
 }
 .header-language-container,
@@ -3369,11 +3372,12 @@ body {
 
 .logo:hover {
   opacity: 0.8;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 771px) {
   .logo {
-    max-width: 300px;
+    max-width: 415px;
     margin-right: 10px;
   }
   .logo .small {
