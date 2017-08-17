@@ -3350,12 +3350,8 @@ body {
  * Logo
  * ============================================ */
 .logo {
-  display: block;
-  float: left;
   width: 65%;
   min-width: 100px;
-  text-align: center;
-  margin-right: 10px;
 }
 .logo img {
   max-width: 100%;
