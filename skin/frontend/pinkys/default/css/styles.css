@@ -3269,6 +3269,17 @@ body {
   }
 }
 
+.header-language-container,
+.page-header {
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  background-color: rgba(237, 64, 142, 0.19);
+  background-image: url("../images/decor.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 0px;
+}
+
 @media only screen and (min-width: 771px) {
   .page-header {
     /*max-width: $max-container-width;*/
@@ -3281,12 +3292,6 @@ body {
     background-position-y: -51px;
   }
 }
-.header-language-container,
-.page-header {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  background-color: rgba(249, 108, 150, 0.24);
-}
-
 /* ============================================ *
  * Language switcher + welcome message
  * ============================================ */

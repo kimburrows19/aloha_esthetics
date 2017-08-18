@@ -40,6 +40,18 @@
         }
 
 }
+
+.header-language-container,
+.page-header {
+    font-family: $f-stack-special;
+    font-family: $f-stack-special;
+    background-color: rgba(237, 64, 142, 0.19); 
+    background-image: url('../images/decor.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0px;
+}
+
 @include bp(min-width, $bp-medium + 1)  {
 
     .page-header {
@@ -54,11 +66,6 @@
     }
 }
 
-.header-language-container,
-.page-header {
-    font-family: $f-stack-special;
-    background-color: rgba(249, 108, 150, 0.24);
-}
 
 /* ============================================ *
  * Language switcher + welcome message
